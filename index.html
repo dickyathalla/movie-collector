@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Movie Collector</title>
+    <link type="image/x-icon" href="img/logo.png" rel="shortcut icon" />
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+
+  <body onload="getData()">
+    <!-- nav -->
+    <section id="navigbar">
+      <div class="nav-wrapper">
+        <div class="container">
+          <div class="nav">
+            <a href="index.html" class="logo"> <i class="bx bx-movie-play bx-tada main-color"></i>Nex<span class="main-color">Flit</span> </a>
+            <ul class="nav-menu" id="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Genre</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Series</a></li>
+              <li><a href="#">About</a></li>
+              <li>
+                <input type="text" placeholder="Search movie title" id="searchInput" name="search" />
+                <button onclick="searchData()"><i class="fa fa-search"></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end nav -->
+
+    <!-- content -->
+    <section class="content" id="content"></section>
+    <!-- end content -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
